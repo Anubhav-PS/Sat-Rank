@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cellDisplayScoreCardView"
+    android:layout_width="match_parent"
+    android:layout_height="84dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardElevation="1dp"
+    app:cardBackgroundColor="@color/navy_blue"
+    app:cardCornerRadius="12dp"
+    app:cardUseCompatPadding="true"
+    app:rippleColor="@color/murky_blue">
+
+    <RelativeLayout
+        android:id="@+id/cellDisplayScoreRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/cellDisplayScorePassed"
+            android:layout_width="18dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/green"
+            android:orientation="horizontal" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cellDisplayScoreNameTxt"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="18dp"
+            android:layout_toEndOf="@id/cellDisplayScorePassed"
+            android:layout_toStartOf="@id/cellDisplayScoreTxt"
+            android:ellipsize="end"
+            android:fontFamily="@font/inter_medium"
+            android:letterSpacing="0.05"
+            android:maxLines="1"
+            android:paddingEnd="6dp"
+            android:text="Suraj Kumar"
+            android:textColor="@color/white"
+            android:textSize="18sp">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cellDisplayScoreTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="22dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_medium"
+            android:letterSpacing="0.05"
+            android:maxLines="1"
+            android:paddingEnd="6dp"
+            android:text="642"
+            android:textColor="@color/neon_blue"
+            android:textSize="16sp">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
