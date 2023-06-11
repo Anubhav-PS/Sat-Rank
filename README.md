@@ -4,18 +4,18 @@ Display SAT rank
 
 The functions of this app
 
-->Insert SAT Score of students along with the student details
-->Update Details of students
-->Delete SAT Score of student
-->Fetch all the SAT Scores
-->Get SAT Score of student by name
+* Insert SAT Score of students along with the student details
+* Update Details of students
+* Delete SAT Score of student
+* Fetch all the SAT Scores
+* Get SAT Score of student by name
 
 
 The student's name is the unique indetifier or the primary key
 
 
 The API Created are as below (The api are created in node.js and deployed to google cloud using the google cloud function tool)
-The github link for the backend -
+The github link for the backend - https://github.com/Anubhav-PS/Sat-Rank-Backend
 
 * To add or insert sat score 
   https://us-central1-sat-mark.cloudfunctions.net/addScore
